@@ -130,9 +130,9 @@ export function CreateContestForm({ adminKey }: { adminKey: string }) {
 // ─── Contest action buttons ───────────────────────────────────────────────────
 
 const ACTIONS = [
-  { label: "Lock", key: "lock", fn: adminApi.lockContest },
-  { label: "Score", key: "score", fn: adminApi.scoreContest },
-  { label: "Settle", key: "settle", fn: adminApi.settleContest },
+  { label: "Lock", key: "lock", fn: adminApi.lockContest, danger: false },
+  { label: "Score", key: "score", fn: adminApi.scoreContest, danger: false },
+  { label: "Settle", key: "settle", fn: adminApi.settleContest, danger: false },
   { label: "Cancel", key: "cancel", fn: adminApi.cancelContest, danger: true },
 ] as const;
 
